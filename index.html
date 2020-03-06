@@ -49,6 +49,9 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#demo">Demonstração do Sistema</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#estrutura">Estrutura da Solução</a>
+        </li>
         <!--<li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
@@ -137,16 +140,57 @@
       <div class="w-100">
         <h2 class="mb-5">Demonstração do Sistema</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="estrutura">
+      <div class="w-100">
+        <h2 class="mb-5">Estrutura da Solução</h2>
+
+      <p>
+        A solução proposta neste trabalho é baseada nos atuais processos necessários para ainscrição do médico e de suas informações relevantes no CRM, podendo este realizar eventosdiversos, como a sua primeira inscrição, reinscrição, transferências, cancelamentos e registro deespecialidade, por exemplo. Assim sendo, faz-se necessário levar em consideração as entidadesque compõem o cenário de registro de informações. Em consonância aos processos descritos naseção anterior, propõe-se as seguintes categorias as quais representam os nós participantes da rede:
+      </p>
+
+            <div class="subheading mb-3">Conselho Regional de Medicina (CRM):</div>
+            <p>
+              é a entidade responsável por fiscalizar, apurar e julgar irregularidades contra médicos no Estado. Além disso, é o órgão responsável pelo registro de diplomas, títulos de especialidade e informações relevantes referentes ao profissional.
+            </p>
+            <div class="subheading mb-3">Instituição de Ensino Superior (IES):</div>
+            <p>
+              é uma instituição que promove educação em nível superior que, de acordo com suas características, são classificadas como universidade e  faculdades de ensino superior
+            </p>
+            <div class="subheading mb-3">Entidade de Especialidade (EE):</div>
+            <p> 
+              é uma instituição que emite os certificados de residência médica e títulos de especialidades. Esses documentos podem apenas ser emitidos pelas sociedades de especialidades filiadas à Associação Médica Brasileira (AMB) e/ou instituições de residência médica credenciados pela Comissão Nacional de Residência Médica (CNRM). Essas instituições tem a finalidade de permitir a qualificação do médico graduado nas diferentes especialidades da medicina em nível de pós-graduação, no qual os aprendizes desenvolvem competências específicas para a aplicação de suas funções de forma adequada.
+            </p>
+
+            <p>
+              A presente proposta utiliza uma \textit{blockchain} permissionada da tecnologia Hyperledger apresentada na Seção \ref{sec:hyperledger}, onde cada nó define papéis que são atribuídas aos participantes e o acesso é concedido ou restrito por meio desses papéis. Assim, um provedor de serviço MSP trata de gerar as credenciais para um dos diversos tipos de participantes como apresentado na Figura \ref{fig:visao-geral}.
+            </p>
+
+        <img src="img/visaoGeral.png" width="700" height="400" alt="Demonstracao">
+
+        <img src="img/associacaoCentificado.png" width="700" height="300" alt="Demonstracao">
+
+        <img src="img/estruturaProposta.png" width="700" height="500" alt="Demonstracao">
+
+        <img src="img/CRM.png" width="700" height="500" alt="Demonstracao">
+
+
+
+
+
+
+        <!--<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Administrador</h3>
             <div class="subheading mb-3">Bachelor of Science</div>
             <div>Computer Science - Web Development Track</div>
             <p>GPA: 3.23</p>
           </div>
-         <!-- <div class="resume-date text-md-right">
+         <div class="resume-date text-md-right">
             <span class="text-primary">August 2006 - May 2010</span>
-          </div>-->
+          </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
@@ -155,10 +199,10 @@
             <div class="subheading mb-3">Technology Magnet Program</div>
             <p>GPA: 3.56</p>
           </div>
-          <!--<div class="resume-date text-md-right">
+          <div class="resume-date text-md-right">
             <span class="text-primary">August 2002 - May 2006</span>
-          </div>-->
-        </div>
+          </div>
+        </div>-->
 
       </div>
     </section>
